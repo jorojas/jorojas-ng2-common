@@ -20,12 +20,14 @@ export * from './sample.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    PipesModule
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    PipesModule
   ]
 })
 export class SampleModule {

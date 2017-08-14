@@ -160,12 +160,14 @@ SampleModule.decorators = [
                 declarations: [
                     SampleComponent,
                     SampleDirective,
-                    SamplePipe
+                    SamplePipe,
+                    PipesModule
                 ],
                 exports: [
                     SampleComponent,
                     SampleDirective,
-                    SamplePipe
+                    SamplePipe,
+                    PipesModule
                 ]
             },] },
 ];
