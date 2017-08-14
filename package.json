@@ -1,5 +1,5 @@
 {
-  "name": "jorojas-ng2-common",
+  "name": "@jorojas/ng2-common",
   "version": "0.1.0",
   "scripts": {
     "build": "gulp build",
@@ -27,12 +27,12 @@
     "url": "https://github.com/jorojas/jorojas-ng2-common/issues"
   },
   "devDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/common": "4.2.3",
+    "@angular/compiler": "4.2.3",
+    "@angular/compiler-cli": "4.2.3",
+    "@angular/core": "4.2.3",
+    "@angular/platform-browser": "4.2.3",
+    "@angular/platform-browser-dynamic": "4.2.3",
     "@compodoc/compodoc": "^1.0.0-beta.7",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
