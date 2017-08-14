@@ -123,6 +123,14 @@ PoweredByPipe.ctorParameters = function () { return []; };
 var PipesModule = (function () {
     function PipesModule() {
     }
+    /**
+     * @return {?}
+     */
+    PipesModule.forRoot = function () {
+        return {
+            ngModule: PipesModule
+        };
+    };
     return PipesModule;
 }());
 PipesModule.decorators = [
