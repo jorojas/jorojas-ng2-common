@@ -5,10 +5,14 @@ import { SampleDirective } from './sample.directive';
 import { SamplePipe } from './sample.pipe';
 import { SampleService } from './sample.service';
 
+import { CopyrightPipe } from './copyright.pipe';
+
 export * from './sample.component';
 export * from './sample.directive';
 export * from './sample.pipe';
 export * from './sample.service';
+
+export * from './copyright.pipe';
 
 @NgModule({
   imports: [
@@ -17,12 +21,14 @@ export * from './sample.service';
   declarations: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    CopyrightPipe
   ],
   exports: [
     SampleComponent,
     SampleDirective,
-    SamplePipe
+    SamplePipe,
+    CopyrightPipe
   ]
 })
 export class NovoCommonModule {

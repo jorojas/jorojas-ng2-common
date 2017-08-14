@@ -79,6 +79,41 @@ SampleService.decorators = [
  */
 SampleService.ctorParameters = function () { return []; };
 
+/**
+ * Generated class for the PoweredByPipe pipe.
+
+See https://angular.io/docs/ts/latest/guide/pipes.html for more info on
+Angular Pipes.
+ */
+var CopyrightPipe = (function () {
+    function CopyrightPipe() {
+    }
+    /**
+     * Takes a value and makes it lowercase.
+     * @param {?} value
+     * @param {...?} args
+     * @return {?}
+     */
+    CopyrightPipe.prototype.transform = function (value) {
+        var args = [];
+        for (var _i = 1; _i < arguments.length; _i++) {
+            args[_i - 1] = arguments[_i];
+        }
+        //return value.toLowerCase();
+        return 'Copyright NovoPayment Inc., 2017';
+    };
+    return CopyrightPipe;
+}());
+CopyrightPipe.decorators = [
+    { type: Pipe, args: [{
+                name: 'copyrightPipe',
+            },] },
+];
+/**
+ * @nocollapse
+ */
+CopyrightPipe.ctorParameters = function () { return []; };
+
 var NovoCommonModule = (function () {
     function NovoCommonModule() {
     }
@@ -101,12 +136,14 @@ NovoCommonModule.decorators = [
                 declarations: [
                     SampleComponent,
                     SampleDirective,
-                    SamplePipe
+                    SamplePipe,
+                    CopyrightPipe
                 ],
                 exports: [
                     SampleComponent,
                     SampleDirective,
-                    SamplePipe
+                    SamplePipe,
+                    CopyrightPipe
                 ]
             },] },
 ];
@@ -115,4 +152,4 @@ NovoCommonModule.decorators = [
  */
 NovoCommonModule.ctorParameters = function () { return []; };
 
-export { NovoCommonModule, SampleComponent, SampleDirective, SamplePipe, SampleService };
+export { NovoCommonModule, SampleComponent, SampleDirective, SamplePipe, SampleService, CopyrightPipe };
